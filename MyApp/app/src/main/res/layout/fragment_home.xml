@@ -1,0 +1,185 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home"
+    tools:context="com.example.ayushib.myapplication.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TextViewGames"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="serif"
+            android:text="My Games"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TextViewDiary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="My Diary"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+
+        <!-- <TextView
+             android:id="@+id/TextViewProgress"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="serif"
+             android:text="Progress Log"
+             android:textAlignment="center"
+             android:textSize="20sp" />
+ -->
+    </TableRow>
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/imageViewGame"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/games"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/imageViewDiary"
+            android:layout_width="156dp"
+            android:layout_height="110dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:src="@drawable/diary" />
+
+
+        <!-- <ImageView
+             android:id="@+id/imageViewProgress"
+             android:layout_width="156dp"
+             android:layout_height="110dp"
+             android:layout_column="1"
+             android:layout_row="0"
+             android:paddingTop="20dp"
+             android:paddingLeft="20dp"
+             android:src="@drawable/progress" />-->
+
+    </TableRow>
+
+
+    <TableRow
+        android:paddingTop="50dp">
+
+        <TextView
+            android:id="@+id/TextViewNutrition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Nutrition"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/TextViewExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Exercises"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/imageViewFood"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/food" />
+
+        <ImageView
+            android:id="@+id/imageViewWorkout"
+            android:layout_width="156dp"
+            android:layout_height="110dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:src="@drawable/workout" />
+
+    </TableRow>
+
+
+<!--
+    <TableRow
+        android:paddingTop="40dp">
+
+        <TextView
+            android:id="@+id/TextViewChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Chat"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/TextViewDiary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="My Diary"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/imageViewChat"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/chat" />
+
+        <ImageView
+            android:id="@+id/imageViewDiary"
+            android:layout_width="156dp"
+            android:layout_height="110dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:src="@drawable/diary" />
+
+    </TableRow>-->
+
+</TableLayout>
+
+</FrameLayout>

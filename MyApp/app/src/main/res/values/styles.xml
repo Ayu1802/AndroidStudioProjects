@@ -17,4 +17,18 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+
+
+
+    <style name="BottomNavigation">
+        <item name="android:background">@color/colorAccent</item>
+
+        <item name="itemIconTint">@color/colorPrimaryDark</item>
+        <item name="itemTextColor">@color/colorPrimaryDark</item>
+        <item name="paddingStart">@color/colorAccent</item>
+        <item name="paddingEnd">@color/colorAccent</item>
+    </style>
+
+
+
 </resources>
