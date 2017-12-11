@@ -394,31 +394,31 @@ public class MainActivity extends AppCompatActivity {
                 p2.setText("P2: " + cpuPoints);
             }
         } else {
-            question1.setImageResource(R.drawable.question);
-            question2.setImageResource(R.drawable.question);
-            question3.setImageResource(R.drawable.question);
-            question4.setImageResource(R.drawable.question);
+            question1.setImageResource(R.drawable.qu1);
+            question2.setImageResource(R.drawable.qu2);
+            question3.setImageResource(R.drawable.qu3);
+            question4.setImageResource(R.drawable.qu4);
 
-            question11.setImageResource(R.drawable.question);
-            question12.setImageResource(R.drawable.question);
-            question13.setImageResource(R.drawable.question);
-            question14.setImageResource(R.drawable.question);
+            question11.setImageResource(R.drawable.qu5);
+            question12.setImageResource(R.drawable.qu6);
+            question13.setImageResource(R.drawable.qu2);
+            question14.setImageResource(R.drawable.qu3);
 
-            question21.setImageResource(R.drawable.question);
-            question22.setImageResource(R.drawable.question);
-            question23.setImageResource(R.drawable.question);
-            question24.setImageResource(R.drawable.question);
+            question21.setImageResource(R.drawable.qu1);
+            question22.setImageResource(R.drawable.qu6);
+            question23.setImageResource(R.drawable.qu5);
+            question24.setImageResource(R.drawable.qu4);
 
 
             //change the palyer turn
             if (turn == 1){
                 turn = 2;
-                p1.setTextColor(Color.GRAY);
-                p2.setTextColor(Color.BLACK);
+                p1.setTextColor(Color.GREEN);
+                p2.setTextColor(Color.WHITE);
             } else if(turn ==2){
                 turn = 1;
-                p1.setTextColor(Color.GRAY);
-                p2.setTextColor(Color.BLACK);
+                p1.setTextColor(Color.GREEN);
+                p2.setTextColor(Color.WHITE);
             }
 
         }
