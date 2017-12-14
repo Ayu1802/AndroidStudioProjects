@@ -22,21 +22,38 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="1">
+
         <EditText
             android:id="@+id/add_task_box"
-            android:layout_width="0dp"
+            android:layout_width="275dp"
+            android:layout_height="69dp"
             android:inputType="text"
-            android:layout_height="match_parent"
-            android:layout_weight="7"/>
-        <Button
+            android:textColorLink="@android:color/holo_blue_dark"
+            android:layout_weight="0.64"
+            android:layout_marginBottom="15dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/add_task_button"
+            android:layout_width="wrap_content"
+            android:layout_height="87dp"
+            android:layout_gravity="bottom|end|right"
+            android:src="@drawable/ic_action_add"
+            app:backgroundTint="@android:color/holo_blue_dark"
+            app:fabSize="normal"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="10dp"/>
+
+
+        <!--<Button
             android:id="@+id/add_task_button"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="@string/add_task_button"
             android:padding="12dp"
             android:layout_margin="0dp"
-            android:layout_weight="3"/>
+            android:layout_weight="3"/>-->
     </LinearLayout>
 
 </RelativeLayout>

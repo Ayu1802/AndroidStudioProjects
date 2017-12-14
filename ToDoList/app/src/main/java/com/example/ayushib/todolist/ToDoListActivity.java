@@ -1,5 +1,6 @@
 package com.example.ayushib.todolist;
 
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -38,7 +39,7 @@ public class ToDoListActivity extends AppCompatActivity {
         recyclerView = (RecyclerView)findViewById(R.id.task_list);
         linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
-        Button addTaskButton = (Button)findViewById(R.id.add_task_button);
+        FloatingActionButton addTaskButton = (FloatingActionButton)findViewById(R.id.add_task_button);
         addTaskButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
