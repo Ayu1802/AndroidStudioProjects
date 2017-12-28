@@ -50,7 +50,7 @@ public class SliderAdapter extends PagerAdapter {
 
     public int[] lst_backgroundColor = {
             Color.rgb(100,181,246),
-            Color.rgb(149,70,97),
+            Color.rgb(240,98,146),
             Color.rgb(0,150,136),
             Color.rgb(52,73,94)
 

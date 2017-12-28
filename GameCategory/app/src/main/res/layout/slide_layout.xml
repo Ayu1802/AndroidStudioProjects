@@ -39,7 +39,7 @@
         android:fontFamily="serif-monospace"
         android:text="TextView"
         android:textAlignment="center"
-        android:textColor="@color/colorTransparentWhite"
+        android:textColor="@color/colorpl"
         android:textSize="26sp" />
 
     <Button
