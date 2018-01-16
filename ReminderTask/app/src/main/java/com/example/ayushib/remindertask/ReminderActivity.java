@@ -104,10 +104,11 @@ public void onPageSelected(int position) {
         mViewPager.setCurrentItem(0);
     }
 
-    @Override
+   /* @Override
     public Application getApp() {
-        return (Application) super.getApp();
-    }
+
+        return (Application) super.getApp;
+    }*/
 
     private final int REQUEST_CODE_SPLASH = 1000;
 

@@ -14,7 +14,7 @@ import android.os.Build;
 import com.example.ayushib.remindertask.ListItem;
 import com.example.ayushib.remindertask.List;
 import com.example.ayushib.remindertask.R;
-import com.example.ayushib.notifier.Scheduler;
+import com.example.ayushib.remindertask.notifier.Scheduler;
 import com.example.ayushib.remindertask.Helper;
 
 import com.google.firebase.database.Exclude;
@@ -92,7 +92,7 @@ public class ListItem extends com.example.ayushib.remindertask.ListItem{
 
         public static Bitmap getLargeIcon() {
             if (largeIcon == null)
-                largeIcon = BitmapFactory.decodeResource(Helper.getApplication().getResources(), R.drawable.ic_access_alarm_white_48dp);
+                largeIcon = BitmapFactory.decodeResource(Helper.getApplication().getResources(), R.drawable.ic_action_alarm);
             return largeIcon;
         }
 
@@ -116,7 +116,7 @@ public class ListItem extends com.example.ayushib.remindertask.ListItem{
             if (existingOnly)
                 return notificationId;
             if (notificationId == 0)
-                notificationId = com.example.module.notifier.Notification.getId();
+                notificationId = com.example.ayushib.remindertask.notifier.Notification.getId();
             return notificationId;
         }
 
@@ -164,7 +164,7 @@ public class ListItem extends com.example.ayushib.remindertask.ListItem{
                     .setAutoCancel(false)
                     .setOngoing(true)
                     .setContentIntent(contentIndent)
-                    .setSmallIcon(R.drawable.ic_access_alarm_white_24dp)
+                    .setSmallIcon(R.drawable.ic_action_alarm)
                     .setLargeIcon(getLargeIcon())
                     .setDefaults(Notification.DEFAULT_SOUND);
             if (Build.VERSION.SDK_INT >= 17)

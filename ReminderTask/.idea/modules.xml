@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Module/Module.iml" filepath="$PROJECT_DIR$/Module/Module.iml" />
       <module fileurl="file://$PROJECT_DIR$/ReminderTask.iml" filepath="$PROJECT_DIR$/ReminderTask.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module/module.iml" filepath="$PROJECT_DIR$/Module/module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" />
     </modules>
   </component>
 </project>

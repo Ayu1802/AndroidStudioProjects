@@ -5,7 +5,7 @@ import android.graphics.BitmapFactory;
 import com.example.ayushib.notifier.Scheduler;
 import com.example.ayushib.remindertask.Helper;
 
-import com.example.module.ListItem;
+import com.example.ayushib.remindertask.ListItem;
 
 /**
  * Created by Ayushi B on 19-Dec-17.
@@ -26,6 +26,7 @@ public class Application extends ReminderActivity {
 
     @Override
     public void onFirebaseCreate() {
+
         super.onFirebaseCreate();
         Scheduler.setAndroidContext(getApplicationContext());
         ListItem.setContentActivity(ReminderActivity.class);
