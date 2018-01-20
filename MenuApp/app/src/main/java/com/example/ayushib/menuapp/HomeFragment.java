@@ -65,7 +65,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
               startActivity(i3);
                break;
             default:
-                Intent i4 = new Intent(getActivity(), WorkoutActivity.class);
+                Intent i4 = new Intent(getActivity(), ChannelActivity.class);
                 startActivity(i4);
                 break;
         }
