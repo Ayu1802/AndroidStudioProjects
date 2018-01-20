@@ -6,17 +6,26 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#312C4A"
         tools:context="com.example.ayushib.tictactoe.StartActivity">
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:src="@drawable/logotictactoe"
+            android:id="@+id/imageView3"
+            android:layout_marginTop="73dp"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="100dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="42dp"
-            android:text="Tic Tac Toe"
-            android:textSize="36sp"
-            android:textStyle="bold" />
+            android:src="@drawable/tic"
+            android:id="@+id/imageView2" />
 
         <LinearLayout
             android:id="@+id/buttons"
@@ -27,40 +36,22 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/single_mode"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="startSingleMode"
-                android:text="Single Mode"
-                android:textAllCaps="false"
-                android:textColor="#00BCD4"
-                android:textSize="36sp" />
-
-            <Button
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/single_mode"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="8dp"
-                android:onClick="startMultilayer"
-                android:text="Multiplayer"
-                android:textAllCaps="false"
-                android:textColor="#3F51B5"
-                android:textSize="36sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/buttons"
-            android:layout_centerHorizontal="true"
             android:animateLayoutChanges="true"
             android:gravity="center"
             android:orientation="vertical"
-            android:weightSum="1">
+            android:weightSum="1"
+            android:layout_marginRight="118dp"
+            android:layout_marginEnd="118dp"
+            android:id="@+id/linearLayout2"
+            android:layout_below="@+id/button3"
+            android:layout_alignRight="@+id/imageView3"
+            android:layout_alignEnd="@+id/imageView3"
+            android:layout_marginTop="13dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -116,5 +107,33 @@
                 android:layout_marginTop="32dp"
                 android:visibility="invisible" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startMultilayer"
+            android:text="Multiplayer"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="36sp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/single_mode"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/single_mode"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:onClick="startSingleMode"
+            android:text="Single Mode"
+            android:textAllCaps="false"
+            android:textColor="#00BCD4"
+            android:textSize="36sp"
+            android:layout_below="@+id/imageView3"
+            android:layout_centerHorizontal="true" />
     </RelativeLayout>
 </layout>
