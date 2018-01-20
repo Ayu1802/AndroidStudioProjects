@@ -1,6 +1,7 @@
 package com.example.ayushib.bunnygame;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
@@ -113,12 +114,15 @@ public class BunnyActivity extends AppCompatActivity {
                 tempifleft = 1;
                 bunny4.setImageResource(R.drawable.bearshot);
                 currentscore = currentscore + 1;
-                score.setText("SCORE: " + currentscore);
+                score.setText("SCORE:  " + currentscore);
                 bunny4.setEnabled(false);
             }
         });
 
     }
+
+
+    //actions to take while the game is still on
     private void theGameActions() {
         if (currentscore < 10) {
             finalpt = 1000;
@@ -207,8 +211,11 @@ public class BunnyActivity extends AppCompatActivity {
                 }
 
                 if (chance == 0) {
-                    Toast.makeText(BunnyActivity.this, "GAME OVER", Toast.LENGTH_SHORT).show();
-                    btnStart.setEnabled(true);
+
+                    Intent myIntent = new Intent(BunnyActivity.this, BunnyGameOver.class);
+                    startActivity(myIntent);
+                    /*Toast.makeText(BunnyActivity.this, "GAME OVER", Toast.LENGTH_SHORT).show();*/
+                    /*btnStart.setEnabled(true);*/
 
                 }else if (chance >0){
                     theGameActions();
