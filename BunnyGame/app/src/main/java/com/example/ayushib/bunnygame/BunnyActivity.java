@@ -68,6 +68,7 @@ public class BunnyActivity extends AppCompatActivity {
                 }, 1000);
 
                 btnStart.setEnabled(false);
+                btnStart.setVisibility(View.INVISIBLE);
             }
         });
 

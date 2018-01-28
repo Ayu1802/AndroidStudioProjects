@@ -5,9 +5,47 @@
     tools:context="com.example.ayushib.menuapp.ChatFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Chat" />
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="46dp"
+            android:src="@drawable/chat"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="175dp"
+            android:height="60dp"
+            android:background="@color/darkgreybutton"
+            android:radius="5dp"
+            android:text="Start Chat"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:layout_marginTop="41dp"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Let's get connected ! \n\nMake sure that your wifi is on."
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_below="@+id/imageView3"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
 
 </FrameLayout>

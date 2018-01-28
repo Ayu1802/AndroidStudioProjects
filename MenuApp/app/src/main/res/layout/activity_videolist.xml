@@ -2,23 +2,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/asser"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+       android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:id="@+id/asser">
+        android:orientation="horizontal">
 
         <com.android.volley.toolbox.NetworkImageView
-            android:layout_width="100dp"
+            android:id="@+id/video_image"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/video_image"/>
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"/>
 
         <LinearLayout
-            android:layout_width="383dp"
-            android:layout_height="115dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
@@ -26,7 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Video Title"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
 

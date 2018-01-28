@@ -15,7 +15,7 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 import java.util.ArrayList;
 
-import static android.R.attr.fragment;
+
 
 //extending BaseAdapter and populating data in a ListView.
 public class CustomListAdapter extends BaseAdapter {

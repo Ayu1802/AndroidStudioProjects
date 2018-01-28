@@ -30,8 +30,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="79dp"
-        android:layout_marginStart="79dp" />
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
 
     <TextView
         android:id="@+id/p2"

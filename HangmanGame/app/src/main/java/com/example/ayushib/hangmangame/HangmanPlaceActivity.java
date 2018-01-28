@@ -23,7 +23,7 @@ import android.widget.ImageView;
 import android.support.v7.app.ActionBar;
 
 public class HangmanPlaceActivity extends AppCompatActivity {
-   
+
     private String[] places;
     private Random rand;
     private String currWord;

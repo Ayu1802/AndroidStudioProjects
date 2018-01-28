@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PlayBunnyGame">
+        <activity android:name=".PlayBunnyGame"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,8 +18,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".BunnyActivity"></activity>
-        <activity android:name=".BunnyGameOver"></activity>
+        <activity android:name=".BunnyActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".BunnyGameOver"
+            android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>
