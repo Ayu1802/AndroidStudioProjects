@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/brikbg"
+    tools:context="com.example.ayushib.hangmangame.HangmanCategory">
+
+    <Button
+        android:id="@+id/btnbasic"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="187dp"
+        android:background="#A85792"
+        android:text="BASIC THINGS"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnfood"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnbasic"
+        android:layout_alignRight="@+id/btnbasic"
+        android:layout_below="@+id/btnbasic"
+        android:layout_marginTop="31dp"
+        android:background="#1BC2AC"
+        android:text="FOOD LOVERS"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnplaces"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnfood"
+        android:layout_alignRight="@+id/btnfood"
+        android:layout_below="@+id/btnfood"
+        android:layout_marginTop="33dp"
+        android:background="#D98F30"
+        android:text="PLACES IN MAURITIUS"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnanimals"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:text="FAVOURITE ANIMALS"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:layout_below="@+id/btnplaces"
+        android:layout_alignLeft="@+id/btnplaces"
+        android:layout_alignStart="@+id/btnplaces"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="82dp"
+        android:fontFamily="casual"
+        android:text="Choose Category"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/btnfood"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

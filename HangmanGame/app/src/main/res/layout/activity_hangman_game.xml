@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/brikbg"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.ayushib.hangmangame.HangmanGameActivity">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:paddingTop="15dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/gallows"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:src="@drawable/android_hangman_gallows" />
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/head"
+            android:paddingLeft="100dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/android_hangman_head" />
+
+        <ImageView
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/body"
+            android:paddingLeft="112dp"
+            android:paddingTop="57dp"
+            android:src="@drawable/android_hangman_body" />
+
+
+        <ImageView
+            android:id="@+id/arm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/arm"
+            android:paddingLeft="84dp"
+            android:paddingTop="55dp"
+            android:src="@drawable/android_hangman_arm1" />
+
+        <ImageView
+            android:id="@+id/arm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/arm"
+            android:paddingLeft="118dp"
+            android:paddingTop="53dp"
+            android:src="@drawable/android_hangman_arm2" />
+
+        <ImageView
+            android:id="@+id/leg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/leg"
+            android:paddingLeft="95dp"
+            android:paddingTop="97dp"
+            android:src="@drawable/android_hangman_leg1" />
+
+        <ImageView
+            android:id="@+id/leg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/leg"
+            android:paddingLeft="117dp"
+            android:paddingTop="97dp"
+            android:src="@drawable/android_hangman_leg2" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/word"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/letters"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="1dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="7"
+        android:padding="20dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" />
+
+
+</LinearLayout>
