@@ -2,6 +2,7 @@ package com.example.ayushib.menuapp;
 
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.ayushib.menuapp.diary.MainDiaryActivity;
 
 
 /**
@@ -31,7 +34,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         imageViewGame = (ImageView) view.findViewById(R.id.imageViewGame);
         imageViewDiary = (ImageView) view.findViewById(R.id.imageViewDiary);
@@ -43,8 +46,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         imageViewNutrition.setOnClickListener(this);
         imageViewWorkout.setOnClickListener(this);
 
+
         return view;
-    }
+
+}
 
 
 
@@ -57,7 +62,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 startActivity(i);
                 break;
             case R.id.imageViewDiary:
-                Intent i2 = new Intent(getActivity(), DiaryActivity.class);
+                Intent i2 = new Intent(getActivity(), MainDiaryActivity.class);
                 startActivity(i2);
                 break;
            case R.id.imageViewNutrition:

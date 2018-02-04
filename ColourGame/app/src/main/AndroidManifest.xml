@@ -20,10 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ColourGameActivity"/>
+        <activity android:name=".ColourGameActivity" />
         <activity android:name=".EasyGame" />
         <activity android:name=".GameOver" />
-         <activity android:name=".HardGame" />
+        <activity android:name=".HardGame" />
 
         <meta-data
             android:name="com.google.android.gms.games.APP_ID"
@@ -34,9 +34,9 @@
 
         <activity
             android:name=".HardGameActivity"
-            android:label="@string/title_activity_hard_game" >
-        </activity>
+            android:label="@string/title_activity_hard_game"></activity>
 
+        <activity android:name=".MediumGame"></activity>
     </application>
 
 </manifest>

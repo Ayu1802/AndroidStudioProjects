@@ -88,8 +88,12 @@ public class HangmanCategory extends AppCompatActivity implements View.OnClickLi
         AlertDialog.Builder helpBuild = new AlertDialog.Builder(this);
 
         helpBuild.setTitle("Help");
-        helpBuild.setMessage("Guess the word by selecting the letters.\n\n"
-                + "You only have 6 wrong selections then it's game over!");
+        helpBuild.setMessage("Guess the word by selecting the letters for each category.\n"
+                + "You only have 6 wrong selections then it's game over! \n\n"
+                + "Examples of words for basic things: Computer, Teddy, Pen \n\n"
+                + "Examples of words for food: Apple, Noodles, Carrot \n\n"
+                + "Examples of words for animals: Shark, Mosquito, Bees \n\n"
+                + "Examples of words for places: Port-Louis, Moka, Vacoas");
         helpBuild.setPositiveButton("OK",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {

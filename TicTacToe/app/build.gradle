@@ -1,7 +1,7 @@
-plugins {
+/*plugins {
     id 'com.onesignal.androidsdk.onesignal-gradle-plugin' version '0.8.1'
 }
-apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'*/
 
 
 

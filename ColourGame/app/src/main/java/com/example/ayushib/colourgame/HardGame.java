@@ -20,7 +20,7 @@ public class HardGame extends ColourGameActivity{
         setContentView(R.layout.activity_hard_game);
         setupProgressView();
 
-        POINT_INCREMENT = 4;
+        POINT_INCREMENT = 6;
         TIMER_BUMP = 2;
 
         gameMode = GameMode.HARD;

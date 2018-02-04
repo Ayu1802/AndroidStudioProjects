@@ -413,12 +413,12 @@ public class MainActivity extends AppCompatActivity {
             //change the palyer turn
             if (turn == 1){
                 turn = 2;
-                p1.setTextColor(Color.GREEN);
+                p1.setTextColor(Color.argb(255,85,139, 47));
                 p2.setTextColor(Color.WHITE);
             } else if(turn ==2){
                 turn = 1;
-                p1.setTextColor(Color.GREEN);
-                p2.setTextColor(Color.WHITE);
+                p1.setTextColor(Color.WHITE);
+                p2.setTextColor(Color.argb(255,85,139, 47));
             }
 
         }

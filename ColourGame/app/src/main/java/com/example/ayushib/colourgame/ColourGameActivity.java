@@ -32,7 +32,7 @@ public abstract class ColourGameActivity extends Activity implements View.OnClic
     protected Runnable runnable;
     protected int timer;
 
-    public enum GameMode { EASY, HARD }
+    public enum GameMode { EASY, HARD, MEDIUM }
     protected GameMode gameMode;
 
     protected int POINT_INCREMENT;
@@ -200,7 +200,12 @@ public abstract class ColourGameActivity extends Activity implements View.OnClic
         level += 1;
         TIMER_DELTA = level;
 
-        if (level == 5){
+        if (level == 4){
+            Intent myIntent = new Intent(ColourGameActivity.this, MediumGame.class);
+            startActivity(myIntent);
+        }
+
+        if (level == 8){
             Intent myIntent = new Intent(ColourGameActivity.this, HardGame.class);
             startActivity(myIntent);
         }

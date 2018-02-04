@@ -6,33 +6,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.ayushib.menuapp.HomeFragment">
 
+
+
     <!-- TODO: Update blank fragment layout -->
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="60dp">
+        android:layout_marginTop="75dp">
 
         <TableRow  android:layout_width="wrap_content">
+
             <TextView
                 android:id="@+id/TextViewGames"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:fontFamily="serif"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="sans-serif-smallcaps"
                 android:text="My Games"
                 android:textAlignment="center"
-                android:layout_marginLeft="40dp"
 
-                android:textSize="20sp" />
+                android:textColor="?android:attr/colorControlNormal"
+                android:textSize="23sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/TextViewDiary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="serif"
+                android:fontFamily="sans-serif-smallcaps"
                 android:text="My Diary"
                 android:textAlignment="center"
 
-                android:textSize="20sp" />
+                android:textSize="23sp"
+                android:textStyle="bold" />
 
         </TableRow>
 
@@ -44,7 +50,7 @@
                 android:layout_height="110dp"
                 android:layout_column="0"
                 android:layout_row="0"
-                android:paddingRight="20dp"
+                android:paddingRight="0dp"
                 android:paddingTop="20dp"
                 android:layout_marginLeft="40dp"
                 app:srcCompat="@drawable/games"
@@ -58,10 +64,10 @@
                 android:layout_height="110dp"
                 android:layout_column="1"
                 android:layout_row="0"
-                android:paddingLeft="20dp"
+                android:clickable="true"
+                android:paddingLeft="15dp"
                 android:paddingTop="20dp"
-                app:srcCompat="@drawable/diary"
-                android:clickable="true"/>
+                app:srcCompat="@drawable/diary" />
 
         </TableRow>
 
@@ -72,21 +78,23 @@
                 android:id="@+id/TextViewNutrition"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="serif"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="sans-serif-smallcaps"
                 android:text="Nutrition"
                 android:textAlignment="center"
-                android:layout_marginLeft="40dp"
-                android:textSize="20sp" />
+                android:textSize="23sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/TextViewExercise"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="serif"
+                android:fontFamily="sans-serif-smallcaps"
                 android:text="Exercises"
                 android:textAlignment="center"
 
-                android:textSize="20sp" />
+                android:textSize="23sp"
+                android:textStyle="bold" />
 
         </TableRow>
 
@@ -98,7 +106,7 @@
                 android:layout_height="110dp"
                 android:layout_column="0"
                 android:layout_row="0"
-                android:paddingRight="20dp"
+                android:paddingRight="12dp"
                 android:paddingTop="20dp"
                 android:layout_marginLeft="40dp"
                 app:srcCompat="@drawable/food"
@@ -110,7 +118,7 @@
                 android:layout_height="110dp"
                 android:layout_column="1"
                 android:layout_row="0"
-                android:paddingLeft="20dp"
+                android:paddingLeft="15dp"
                 android:paddingTop="20dp"
                 app:srcCompat="@drawable/workout"
                 android:clickable="true"/>

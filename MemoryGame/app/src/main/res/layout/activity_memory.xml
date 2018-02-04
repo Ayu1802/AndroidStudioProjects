@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg"
+    tools:context="com.example.ayushib.memorygame.MemoryActivity">
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:src="@drawable/memorygame"
+        android:id="@+id/imglogo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imgqueslogo"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:src="@drawable/questionlogo"
+        android:layout_marginBottom="38dp"
+        android:layout_alignBottom="@+id/btnplay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/playbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imgqueslogo"
+        android:layout_toEndOf="@+id/imgqueslogo"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/btnplay" />
+
+    <ImageView
+        android:id="@+id/imgpanda"
+        android:layout_width="200dp"
+        android:layout_height="175dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/questnmark"
+        android:layout_alignBottom="@+id/imgqueslogo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

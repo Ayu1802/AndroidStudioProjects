@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "543234756376",
-    "firebase_url": "https://credentials-dc145.firebaseio.com",
-    "project_id": "credentials-dc145",
-    "storage_bucket": "credentials-dc145.appspot.com"
+    "project_number": "88777292802",
+    "firebase_url": "https://dissertation-95961.firebaseio.com",
+    "project_id": "dissertation-95961",
+    "storage_bucket": "dissertation-95961.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:543234756376:android:8ab2c09eea2f9398",
+        "mobilesdk_app_id": "1:88777292802:android:116137980af1b021",
         "android_client_info": {
           "package_name": "com.example.ayushib.menuapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "543234756376-368qis026v0pg3gitd87m6tpdrcpffup.apps.googleusercontent.com",
+          "client_id": "88777292802-2hbmltmdk813l6akcetmstrfm4pmk9cg.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC5G053ezRSGqZ8LQ-Gq3cd5XQH6nKHZxg"
+          "current_key": "AIzaSyCmsRQhLWEo6RHVo-CIVH3sFsnPNHpXAPQ"
         }
       ],
       "services": {
